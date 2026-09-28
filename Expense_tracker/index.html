@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <h1>Expense Tracker</h1>
+        <p>it will help you track your transactions</p>
+        <div class="balance">
+          <p>current balance</p>
+          <h2>₹ 0.00</h2>
+        </div>
+        <hr />
+        <section>
+          <div class="card1">
+            <p>total income</p>
+            <h2>₹ 0.00</h2>
+          </div>
+          <div class="card2" >
+            <p>total out</p>
+            <h2>₹ 0.00</h2>
+          </div>
+          <div class="card3">
+            <p>entries</p>
+            <h2>0</h2>
+          </div>
+        </section>
+
+          <div class="inserts">
+            <form action="">
+              <label for="dcrip">description</label>
+              <input type="text" placeholder="Reason" id="dcrip"/>
+
+              <label for="amount">amount</label>
+              <input type="number" placeholder="₹ 0.00" id="amount"/>
+
+              <label for="">category</label>
+              <select name="" id="category">
+                <option value="">Select Option</option>
+                <option value="food">food</option>
+                <option value="transport">transport</option>
+                <option value="entertainment">entertainment</option>
+                <option value="rent">rent</option>
+                <option value="snacks">snacks</option>
+                <option value="income">income</option>
+                <option value="others">others</option>
+              </select>
+
+              <label>Transaction Type</label>
+              <div class="transaction-type">
+                <label>
+                  <input type="radio" name="type" value="income" /> Income
+                </label>
+                <label>
+                  <input type="radio" name="type" value="expense" checked />
+                  Expense
+                </label>
+              </div>
+
+              <div></div>
+              <button>add</button>
+            </form>
+          </div>
+        <hr />
+
+        <div class="details">
+          <h1>transactions</h1>
+          <div class="show">
+          <button id="inButton">income</button>
+          <button id="exButton">expense</button>
+          </div>
+        </div>
+        <hr />
+        <ul id="transactionlist">
+          <li>S.no</li>
+          <li>Description</li>
+          <li>Category</li>
+          <li>Amount</li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="./App.js"></script>
+  </body>
+</html>

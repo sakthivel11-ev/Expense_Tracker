@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 74, 245);
+}
+.box{
+    min-height: 90vh;
+    width:68%;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 25px;
+    color: lightgray;
+    padding: 15px;
+}
+.box>h1{
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 3px;
+    letter-spacing: 2px;
+}
+.box>p{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+.box>.balance{
+    background-color: rgba(18, 4, 53, 0.863);
+    padding: 3px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    border:0.1px outset;
+}
+.box>.balance>p{
+    font-size: 17px;
+    margin: 10px;
+    text-transform: capitalize ;
+    color: lightgrey;
+    letter-spacing: 1.1px;
+    text-shadow: 1px 2px 2px black;
+}
+.box>.balance>h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: lightgrey;
+    text-shadow: 1px 2px 2px black;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    gap: 5%;
+}
+section>.card1{
+    height: 80px;
+    width: 30%;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 128, 0, 0.185);
+    border: 0.2px outset;
+    text-shadow: 1px 2px 2px black;
+}
+section>.card1>p{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px black;
+}
+section>.card1>h2{
+    font-size: 30px;
+}
+section>.card2{
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.164); 
+    border: 0.2px outset;
+}
+section>.card2>p{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px black;
+}
+section>.card2>h2{
+    font-size: 30px;
+    text-shadow: 1px 2px 2px black;
+}
+section>.card3{
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 255, 0.171); 
+    border: 0.2px outset;  
+}
+section>.card3>p{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px black;
+}
+section>.card3>h2{
+    font-size: 30px;
+    text-shadow: 1px 2px 2px black;
+}
+.inserts{
+    background-color: #3333335b;
+    border-radius: 15px;
+    border: 0.2px outset;
+    margin-bottom: 10px;
+}
+.inserts>form{
+    padding:9px 20px;
+    display: grid;
+    grid-template-columns: 55% 45% ;
+    row-gap: 8px;
+    align-items: center;
+}
+form>label{
+    font-size: 17px;
+    text-transform: capitalize;
+    /* font-weight: bold; */
+    letter-spacing: 1.01px;
+    text-shadow: 1px 2px 2px black;
+}
+form>input{
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #333333d8;
+    /* font-weight: bold; */
+    letter-spacing: 1.2px;
+    border: none;
+    color:white;
+}
+form>input:active{
+    border: none;
+}
+form>select{
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #333333d8;
+    text-transform: capitalize;
+    border: none;
+    color: white;
+}
+form>select>option{
+    background-color:#3333335b;
+    border-radius: 15px;
+}
+.transaction-type>label{
+    font-size: 17px;
+    /* font-weight: bold; */
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: 1.1px;
+    margin-right: 30%;
+    accent-color: rgb(25, 25, 223);
+}
+form>button{
+    width: 90%;
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform:capitalize;
+    background-color:#333333d8;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    cursor: pointer;
+    border: none;
+}
+form>button:hover{
+    background-color: rgb(74, 74, 245);
+}
+form>button:active{
+    background-color: rgb(25, 25, 223);
+    color: lightcyan;
+    transform: translateY(-2px);
+}
+.details{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details>h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: 1.2px;
+
+}
+.details>.show{
+    display: flex;
+    gap: 50px;
+}
+.details>.show>button{
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #3333335b;
+    color: lightgrey;
+    text-shadow: 1px 2px 2px black;
+    border: none;
+    cursor: pointer;
+}
+.show>button:hover{
+    background-color: rgb(74, 74, 245);
+}
+ul{
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 150px;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+ul>li{
+    font-size: 18px;
+    text-shadow: 1px 2px 2px black;
+}
+.transaction-row {
+  display: contents;
+}
